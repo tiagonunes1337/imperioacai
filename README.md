@@ -58,7 +58,7 @@ SITE-IMPERIO-ACAI/
 
 Os pedidos são realizados diretamente pelo **WhatsApp**:
 
-📞 **(61) 99824-6771**
+📞 **Disponível via botões de WhatsApp integrados no site**
 
 ---
 
