@@ -1,0 +1,62 @@
+/* Estilos globais da página */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Hero section: imagem de fundo com overlay e texto em branco */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("img/acai-foto.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* Conteúdo interno do hero para manter o texto acima do overlay */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 620px;
+  padding: 80px 20px;
+}
+
+/* Estilo do título principal do hero */
+.titulo {
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.descricao {
+  font-size: 1.05rem;
+  color: #f1f1f1;
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
+.mapBox {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333333;
+}
+
+.titulofinal {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
