@@ -1,14 +1,13 @@
-/* Estilos globais da página */
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   background-color: #f8f9fa;
+  overflow-x: hidden; /* Evita a barra de rolagem lateral se algo vazar */
 }
 
-/* Hero section: imagem de fundo com overlay e texto em branco */
 .hero-section {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh; /* Diminuído para mobile não ficar cansativo */
   display: flex;
   align-items: center;
   background-image: url("img/acai-foto.jpg");
@@ -21,42 +20,44 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.65); /* Overlay levemente mais escuro para ler melhor o texto */
 }
 
-/* Conteúdo interno do hero para manter o texto acima do overlay */
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 620px;
-  padding: 80px 20px;
+  width: 100%;
+  max-width: 700px;
+  padding: 40px 20px;
 }
 
-/* Estilo do título principal do hero */
 .titulo {
-  font-size: clamp(2rem, 4vw, 3.6rem);
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 8vw, 3.5rem); /* Ajuste automático de tamanho */
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 .descricao {
-  font-size: 1.05rem;
-  color: #f1f1f1;
-  margin-top: 1rem;
-  line-height: 1.7;
+  font-size: clamp(0.9rem, 4vw, 1.1rem);
+  color: #f8f9fa;
+  margin: 1.5rem 0;
 }
 
-.mapBox {
-  background-color: #f8f9fa;
-  padding: 40px 20px;
-  text-align: center;
-  font-size: 1.1rem;
-  color: #333333;
+/* Botões para não ficarem grudados no mobile */
+.btn-custom {
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 8px;
 }
 
-.titulofinal {
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
-  font-weight: 600;
-  margin-bottom: 20px;
+/* Ajuste das imagens dos cards para não perderem proporção */
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 140px;
+    }
 }
